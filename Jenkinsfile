@@ -15,7 +15,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("SagaDevelopa/react-app")
+                    app = docker.build("sagadevelopa/react-app")
                     app.inside {
                         sh 'echo $(curl localhost:1233)'
                     }
